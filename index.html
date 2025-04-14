@@ -43,9 +43,9 @@
 			}
 
 			main {
-				margin: 20px 0 20px 0;
+				margin: 40px 0 40px 0;
 				text-align: center;
-				width: 80%;
+				width: 60%;
 			}
 
 			p {
@@ -53,8 +53,16 @@
 				color: #666;
 			}
 
-			.message {
-				margin-top: 2rem;
+			.client {
+				font-size: 20px;
+				color: #000;
+				font-weight: bold;
+			}
+
+			.date {
+				color: #000;
+				font-weight: bold;
+				text-decoration: underline;
 			}
 
 			.icon {
@@ -66,6 +74,7 @@
 				width: 50px;
 				height: 50px;
 			}
+
 			.line {
 				border-bottom: 2px solid black;
 				margin-top: 5px;
@@ -135,18 +144,26 @@
 							fill-opacity="0"
 						></rect>
 					</g>
-				</svg>
+				</svg>	
 			</div>
 			<header>
 				<h1>SERVICIO SUSPENDIDO</h1>
 			</header>
 			<div class="line"></div>
 			<main>
-				<p>
-					El sistema ha registrado valores pendientes, la fecha de pago ha vencido...
+				<p class='client'>¡Estimado cliente!</p>
+				<p align="justify">
+					<br>
+					Le informamos que su servicio ha sido suspendido por falta de pago, las fechas de pago son del 1 al 7 de cada mes.
+					<br>
+					Por favor, realiza tu pago dentro de este periodo para evitar cortes en tu servicio.
+					<br />
+					<br>
 				</p>
-				<p class="message">Por favor, contacte con el administrador</p>
-				<p></p>
+				<div class="message">Atentamente
+					<br />
+					<p class='client'>Su proveedor de internet</p>
+				</div>
 			</main>
 		</div>
 	</body>
